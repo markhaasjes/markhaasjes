@@ -1,0 +1,162 @@
+/* default elements */
+
+@import "mixins";
+
+body, table, input, textarea, select, li, button {
+    font: 300 15px/1.5em 'Droid Sans', Helvetica, Arial, Sans-Serif;
+    letter-spacing: .01em;
+    color: @text_color;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+    color: @link-color;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', Helvetica, Arial, Sans-Serif;
+    font-weight: 300;
+    margin: 0;
+    line-height: 1em;
+    color: @text_color;
+
+    a {
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &.padding-bottom {
+        padding-bottom: @dist-2;
+    }
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 1em;
+    margin-bottom: @dist-3;
+}
+
+h3 {
+    font-size: 26px;
+    line-height: 1em;
+    margin-bottom: @dist-3;
+}
+
+h4 {
+    font-size: 24px;
+    line-height: 1.6em;
+    margin-bottom: @dist-5;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.6em;
+    margin-bottom: @dist-6;
+}
+
+h6 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.6em;
+    margin-bottom: @dist-6;
+}
+
+p, ul, ol, form, table{
+    line-height: inherit;
+    margin: 0 0 @dist-3 0;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+small {
+    font-size: .9em;
+}
+
+img {
+    border: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    border-bottom: 1px solid #eee;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+input[type="radio"],input[type="checkbox"], .radio, .checkbox{
+    margin: 0 .25em 0 0;
+}
+
+::-moz-selection, ::selection {
+    // background: #C9275B;
+    // color: #deddd3;
+    // text-shadow: none;
+}
+
+/* common */
+
+.f-left {
+    float: left;
+    margin-right: 1em;
+}
+
+.f-right {
+    float: right;
+    margin-left: 1em;
+}
+
+.center {
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+    height: 1px;
+}
+
+.first {
+    margin-left: 0 !important;
+}
+
+.last {
+    margin-right: 0 !important;
+}
+
+.top {
+    margin-top: 0 !important;
+}
+
+.bottom {
+    margin-bottom: 0 !important;
+}
+
+.errors {
+    color: red;
+}

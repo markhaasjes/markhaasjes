@@ -1,4 +1,3 @@
-markhaasjes
-===========
+# Portfolio website Mark Haasjes
 
-Personal portfolio
+I'll place here some documentation about my portfolio website soon.
