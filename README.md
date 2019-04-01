@@ -1,3 +1,3 @@
-# Portfolio website Mark Haasjes
+# Portfolio website of Mark Haasjes
 
-I'll place here some documentation about my portfolio website soon.
+[Next.js](https://nextjs.org)
