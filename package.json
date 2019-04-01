@@ -1,0 +1,26 @@
+{
+  "name": "markhaasjes.nl",
+  "version": "1.0.0",
+  "description": "Portfolio website of markhaasjes.nl made with Next.js.",
+  "main": "index.html",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markhaasjes/markhaasjes.git"
+  },
+  "author": "Mark Haasjes (hello@markhaasjes.nl)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/markhaasjes/markhaasjes/issues"
+  },
+  "homepage": "https://markhaasjes.nl",
+  "dependencies": {
+    "next": "^8.0.3",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
