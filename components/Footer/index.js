@@ -1,4 +1,9 @@
 import { Component } from 'react';
+import styled from 'styled-components';
+
+const StyledFooter = styled.footer`
+  text-align: center;
+`;
 
 export default class Footer extends Component {
   static getInitialProps() {
@@ -8,12 +13,12 @@ export default class Footer extends Component {
 
   render() {
     return (
-      <footer>
+      <StyledFooter>
         <p>
           This page is rendered on the{' '}
           <strong>{this.props.isServer ? 'server' : 'client'} side</strong>.
         </p>
-      </footer>
+      </StyledFooter>
     );
   }
 }
