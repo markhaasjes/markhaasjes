@@ -17,21 +17,23 @@ const base = css`
   }
 
   a {
-    color: ${colors.brand.light};
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
-  p a {
-    color: ${colors.brand.secondary};
+    color: ${colors.brand.primary};
     text-decoration: underline;
 
     &:hover {
-      color: ${colors.brand.primary};
+      color: ${colors.brand.secondary};
       text-decoration: none;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      margin: 0;
+      padding: 0;
     }
   }
 `;

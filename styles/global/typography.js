@@ -4,17 +4,35 @@ import variables from '../theme/variables';
 const typography = css`
   html {
     font-size: 100%;
+
+    font-family: sans serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
   }
 
   body {
     font-family: ${variables.font.family.default};
+    letter-spacing: 0;
     font-weight: 400;
-    line-height: 1.45;
-    font-variant: common-ligatures tabular-nums contextual;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-feature-settings: 'liga' on;
+    font-size: 18px;
+    line-height: 1.4;
   }
 
   p {
-    margin-bottom: 1.25em;
+    --x-height-multiplier: 0.35;
+    --base-multiplier: 0.179;
+    font-family: ${variables.font.family.reading};
+    letter-spacing: 0.01rem;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 1.58;
+    letter-spacing: -0.003em;
     max-width: 38em;
   }
 

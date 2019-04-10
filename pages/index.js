@@ -5,8 +5,7 @@ import withLBaseLayout from '../components/layouts/BaseLayout';
 
 const Label = styled.label`
   font-size: 1em;
-  text-transform: uppercase;
-  color: ${({ theme }) => theme.brand.secondary};
+  color: ${({ theme }) => theme.brand.tertiary};
 `;
 
 const Title = styled.h1`
@@ -22,7 +21,9 @@ class IndexPage extends Component {
   render() {
     return (
       <main>
-        <Label>My name is</Label>
+        <p>
+          <Label>My name is</Label>
+        </p>
         <Title>Mark Haasjes</Title>
         <Paragraph>
           I'm a Front-end Developer at{' '}
