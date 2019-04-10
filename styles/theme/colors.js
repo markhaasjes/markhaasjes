@@ -5,8 +5,8 @@ export default {
   },
   brand: {
     light: '#F3F2F3',
-    primary: '#5D8B9D',
-    secondary: '#46B7C4',
+    primary: '#46B7C4',
+    secondary: '#5D8B9D',
     tertiary: '#747A79',
     dark: '#253148',
   },

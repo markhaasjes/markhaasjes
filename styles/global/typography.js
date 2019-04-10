@@ -3,25 +3,19 @@ import variables from '../theme/variables';
 
 const typography = css`
   html {
-    font-size: 16px;
-  }
-  @media screen and (min-width: 20rem) {
-    html {
-      font-size: calc(16px + 6 * ((100vw - 20rem) / 680));
-    }
-  }
-  @media screen and (min-width: 75rem) {
-    html {
-      font-size: 22px;
-    }
+    font-size: 100%;
   }
 
   body {
-    font-family: ${variables.font.fontFamily};
-    font-size: 16px;
+    font-family: ${variables.font.family.default};
     font-weight: 400;
+    line-height: 1.45;
     font-variant: common-ligatures tabular-nums contextual;
-    line-height: 1.2;
+  }
+
+  p {
+    margin-bottom: 1.25em;
+    max-width: 38em;
   }
 
   h1,
@@ -30,23 +24,44 @@ const typography = css`
   h4,
   h5,
   h6 {
-    font-family: ${variables.font.fontFamilyHead};
+    font-family: ${variables.font.family.heading};
     font-weight: 700;
-    line-height: 1.2;
-    margin-top: 0;
-    margin-bottom: 0.75em;
+    line-height: 1.15;
+    margin: 2.75rem 0 1rem;
   }
 
   h1 {
-    font-size: 4em;
+    margin-top: 0;
+    font-size: 3.052em;
   }
 
   h2 {
-    font-size: 2em;
+    font-size: 2.441em;
   }
 
   h3 {
-    font-size: 1.2em;
+    font-size: 1.953em;
+  }
+
+  h4 {
+    font-size: 1.563em;
+  }
+
+  h5 {
+    font-size: 1.25em;
+  }
+
+  h6 {
+    font-size: 1em;
+  }
+
+  small {
+    font-size: 0.8em;
+  }
+
+  blockquote {
+    font-size: 1.25em;
+    line-height: 1.25;
   }
 
   a {

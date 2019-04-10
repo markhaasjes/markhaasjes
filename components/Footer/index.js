@@ -2,11 +2,25 @@ import { Component } from 'react';
 import styled from 'styled-components';
 
 const StyledFooter = styled.footer`
-  text-align: center;
+  padding: 2rem 0;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 `;
 
 export default class Footer extends Component {
   render() {
-    return <StyledFooter>Footer</StyledFooter>;
+    return (
+      <StyledFooter>
+        <ul>
+          <li>
+            <a href="https://github.com/markhaasjes">Github.com</a>
+          </li>
+        </ul>
+      </StyledFooter>
+    );
   }
 }

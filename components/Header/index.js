@@ -5,9 +5,10 @@ const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 2rem 0;
 `;
 
-const Title = styled.h1`
+const Title = styled.div`
   margin: 0;
 `;
 
@@ -23,7 +24,7 @@ const Nav = styled.nav`
 const Header = () => (
   <StyledHeader>
     <div>
-      <Title>Test</Title>
+      <Title>MH</Title>
     </div>
     <div>
       <Nav>
@@ -31,11 +32,6 @@ const Header = () => (
           <li>
             <Link href="/">
               <a>Home</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/about">
-              <a>About</a>
             </Link>
           </li>
         </ul>
