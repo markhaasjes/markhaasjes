@@ -2,7 +2,6 @@ import Link from 'next/link';
 import styled from 'styled-components';
 
 const StyledHeader = styled.header`
-  /* flex: 1 1 100%; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,7 +23,7 @@ const Nav = styled.nav`
 const Header = () => (
   <StyledHeader>
     <div>
-      <Title>Portfolio</Title>
+      <Title>Test</Title>
     </div>
     <div>
       <Nav>

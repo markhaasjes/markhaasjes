@@ -1,6 +1,10 @@
 import React from 'react';
-import App, { Container } from 'next/app';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
+
+import App, { Container } from 'next/app';
+import Head from 'next/head';
+
+import Debug from '../components/Debug';
 
 import base from '../styles/global/base';
 import typography from '../styles/global/typography';
@@ -20,7 +24,9 @@ class StyledApp extends App {
       pageProps = await Component.getInitialProps(ctx);
     }
 
-    return { pageProps };
+    const isServer = typeof window === 'undefined';
+
+    return { pageProps, isServer };
   }
 
   render() {
@@ -28,10 +34,33 @@ class StyledApp extends App {
 
     return (
       <Container>
+        <Head>
+          <title>Mark Haasjes Front-end Developer</title>
+        </Head>
         <ThemeProvider theme={{ ...colors, ...variables }}>
           <>
             <GlobalStyle />
             <Component {...pageProps} />
+            {/* TODO: Remove debug code when in production */}
+            <>
+              <p>
+                This page is rendered on the{' '}
+                <strong>
+                  {this.props.isServer ? 'server' : 'client'} side
+                </strong>
+                .
+              </p>
+              <style jsx>{`
+                p {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  right: 0;
+                  font-size: 0.9em;
+                  text-align: center;
+                }
+              `}</style>
+            </>
           </>
         </ThemeProvider>
       </Container>
