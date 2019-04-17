@@ -23,7 +23,8 @@ const typography = css`
     line-height: 1.4;
   }
 
-  p {
+  p,
+  .content {
     --x-height-multiplier: 0.35;
     --base-multiplier: 0.179;
     font-family: ${variables.font.family.reading};

@@ -16,7 +16,6 @@ const Container = styled.div`
 const withLBaseLayout = (Children) => {
   return () => (
     <Container>
-      <Header />
       <Children />
       <Footer />
     </Container>

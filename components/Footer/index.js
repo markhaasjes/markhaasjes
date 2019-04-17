@@ -1,6 +1,8 @@
 import { Component } from 'react';
 import styled from 'styled-components';
 
+import Hyperlink from '../Hyperlink';
+
 const StyledFooter = styled.footer`
   padding: 2rem 0;
 
@@ -17,7 +19,9 @@ export default class Footer extends Component {
       <StyledFooter>
         <ul>
           <li>
-            <a href="https://github.com/markhaasjes">Github.com</a>
+            <Hyperlink href="https://github.com/markhaasjes">
+              Github.com
+            </Hyperlink>
           </li>
         </ul>
       </StyledFooter>
