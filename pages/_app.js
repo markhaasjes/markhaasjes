@@ -34,6 +34,20 @@ class StyledApp extends App {
       <Container>
         <Head>
           <title>Mark Haasjes - Front-end Developer</title>
+          <meta
+            name="description"
+            content="I am a Front-end Developer at CLEVERºFRANKE, a data visualisation design agency based in Utrecht. I love to build web applications with JavaScript. I build these with frameworks, libraries and tools like; React, Redux, D3.js, GraphQL, Apollo, Docker, Jest, Codeship and more."
+          />
+          <meta
+            property="og:title"
+            content="Mark Haasjes - Front-end Developer"
+          />
+          <meta
+            property="og:description"
+            content="I am a Front-end Developer at CLEVERºFRANKE, a data visualisation design agency based in Utrecht. I love to build web applications with JavaScript. I build these with frameworks, libraries and tools like; React, Redux, D3.js, GraphQL, Apollo, Docker, Jest, Codeship and more."
+          />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://www.markhaasjes.nl/" />
         </Head>
         <ThemeProvider theme={{ ...colors, ...variables }}>
           <>
