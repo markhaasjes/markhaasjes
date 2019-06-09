@@ -36,7 +36,7 @@ class StyledApp extends App {
           <title>Mark Haasjes - Front-end Developer</title>
           <meta
             name="description"
-            content="I am a Front-end Developer at CLEVERºFRANKE, a data visualisation design agency based in Utrecht. I love to build web applications with JavaScript. I build these with frameworks, libraries and tools like; React, Redux, D3.js, GraphQL, Apollo, Docker, Jest, Codeship and more."
+            content="I am a Front-end Developer at NOS, the Dutch Broadcast Foundation based in Hilversum. I love to build web applications with JavaScript. I build these with frameworks, libraries and tools like; React, Redux, D3.js, GraphQL, Apollo, Docker, Jest, Codeship and more."
           />
           <meta
             property="og:title"
@@ -44,7 +44,7 @@ class StyledApp extends App {
           />
           <meta
             property="og:description"
-            content="I am a Front-end Developer at CLEVERºFRANKE, a data visualisation design agency based in Utrecht. I love to build web applications with JavaScript. I build these with frameworks, libraries and tools like; React, Redux, D3.js, GraphQL, Apollo, Docker, Jest, Codeship and more."
+            content="I am a Front-end Developer at NOS, the Dutch Broadcast Foundation based in Hilversum. I love to build web applications with JavaScript. I build these with frameworks, libraries and tools like; React, Redux, D3.js, GraphQL, Apollo, Docker, Jest, Codeship and more."
           />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://www.markhaasjes.nl/" />
