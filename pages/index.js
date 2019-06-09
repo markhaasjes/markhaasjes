@@ -32,13 +32,11 @@ class IndexPage extends Component {
           <Title>Mark Haasjes</Title>
           <Paragraph>
             I am a Front-end Developer at{' '}
-            <Hyperlink href="https://www.cleverfranke.com">
-              CLEVERºFRANKE
-            </Hyperlink>
-            , a data visualisation design agency based in Utrecht. I love to
+            <Hyperlink href="https://www.nos.nl">NOS</Hyperlink>, the Dutch
+            Broadcast Foundation based in Hilversum, The Netherlands. I love to
             build web applications with JavaScript. I build these with
-            frameworks, libraries and tools like; React, Redux, D3.js, GraphQL,
-            Apollo, Docker, Jest, Codeship and more.
+            frameworks, libraries and tools like; React, Vue, Redux, D3.js,
+            GraphQL, Apollo, Docker, Jest, Codeship and more.
           </Paragraph>
         </div>
       </StyledMain>
