@@ -2,5 +2,5 @@
   "version": 2,
   "name": "markhaasjes.nl",
   "alias": "markhaasjes.nl",
-  "builds": [{ "src": "next.config.js", "use": "@now/next" }]
+  "builds": [{ "src": "dist/server.js", "use": "@vercel/node" }]
 }
