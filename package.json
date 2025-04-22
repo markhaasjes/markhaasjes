@@ -1,31 +1,34 @@
 {
   "name": "markhaasjes.nl",
-  "version": "1.0.3",
-  "description": "Portfolio website of markhaasjes.nl made with Next.js.",
-  "main": "index.html",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/markhaasjes/markhaasjes.git"
+  "engines": {
+    "node": "22.x"
   },
-  "author": "Mark Haasjes (hello@markhaasjes.nl)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/markhaasjes/markhaasjes/issues"
-  },
-  "homepage": "https://markhaasjes.nl",
   "dependencies": {
-    "next": "^9.3.2",
-    "polished": "^3.4.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "styled-components": "^4.3.1"
+    "@tailwindcss/vite": "^4.1.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^4.1.4"
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.10.0"
+    "@eslint/js": "^9.22.0",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react-swc": "^3.8.0",
+    "eslint": "^9.22.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.26.1",
+    "vite": "^6.3.1"
   }
 }
