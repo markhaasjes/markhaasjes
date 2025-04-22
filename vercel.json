@@ -1,6 +1,0 @@
-{
-  "version": 2,
-  "name": "markhaasjes.nl",
-  "alias": "markhaasjes.nl",
-  "builds": [{ "src": "dist/index.html", "use": "@vercel/node" }]
-}
